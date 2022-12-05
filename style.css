@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background:url('https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/317376000_3406217959667907_7137673108978690846_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=oPnhHkR00gcAX9bLHJk&_nc_ht=scontent.fsgn13-1.fna&oh=00_AfDrfCDc1DTIBJyAXGf20Mjsg2qioGBPXtVaVC7EnX3gCA&oe=6392E74B') no-repeat fixed center center;
+    -moz-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+}
+.main {
+    background-color: rgb(232, 128, 128);
+    width: 323px;
+    height: 365px;
+    width: 268px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -269px 0 0 -130px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.luk-header {
+    color: #fff;
+    font-size: 31px;
+    margin-top: 5px;
+    text-align: center;
+}
+.luk {
+    padding: 5px;
+    text-align: center;
+}
+.luk-folder a,
+.luk-classroom a,
+.luk-time a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    padding: 4px;
+}
+.luk-folder a:hover,
+.luk-classroom a:hover,
+.luk-time a:hover {
+    color: red;
+}
+.luk-time {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.luk-time p,
+.luk-classroom p,
+.luk-folder p {
+    margin-bottom: 10px;
+}
+.luk-classroom {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.luk-folder {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.copyby {
+    color: #fff;
+    float: right;
+    margin-right: 5px;
+    font-size: 15px;
+}

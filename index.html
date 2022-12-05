@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Luk Time</title>
+    <script type="text/javascript">
+        var num;
+        var temp=0;
+        var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+        var preloads=[];
+        /* add any number of images here */
+        preload(
+        'https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/317376000_3406217959667907_7137673108978690846_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=oPnhHkR00gcAX9bLHJk&_nc_ht=scontent.fsgn13-1.fna&oh=00_AfDrfCDc1DTIBJyAXGf20Mjsg2qioGBPXtVaVC7EnX3gCA&oe=6392E74B',
+        'https://scontent.fsgn13-1.fna.fbcdn.net/v/t39.30808-6/316680566_3406218006334569_3310588531502885986_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=al7qhgx5fI0AX-PdECr&_nc_ht=scontent.fsgn13-1.fna&oh=00_AfBdbli9kjx9SYlqGP5-vsdtG3bR5AZ10TGEE-gxAQf1zg&oe=63937B98',
+        'https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/316547620_3406217629667940_8635237133832132134_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=UvcDFYuqeRIAX-BjBHI&tn=f6Ixt32Hbhkx6fDv&_nc_ht=scontent.fsgn13-2.fna&oh=00_AfB1myYwC4YxA1Dzuqz41IN80utmtMBMfU1B2I2XD_L_NA&oe=6391F738',
+        'https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-6/316539351_3406218736334496_4567237277348589977_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_ohc=qT_iHCo5m58AX-zw3rU&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfAwmU720jLnADPMEPhxGLyIKrs7qs0mUlm1qR14qHo2pg&oe=63921B0C'
+        );
+        function preload(){
+        for(var c=0;c<arguments.length;c++) {
+        preloads[preloads.length]=new Image();
+        preloads[preloads.length-1].src=arguments[c];
+        }
+        }
+        function rotateImages() {
+        num=Math.floor(Math.random()*preloads.length);
+        if(num==temp){
+        rotateImages();
+        }
+        else{
+        document.body.style.backgroundImage='url('+preloads[num].src+')';
+        temp=num;
+        setTimeout(function(){rotateImages()},speed);
+        }
+        }
+        
+        if(window.addEventListener){
+        window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+        }
+        else {
+        if(window.attachEvent){
+        window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+        }
+        }
+        </script>
+</head>
+<body>
+    <div class="main">
+        <div class="luk">
+        <div class="luk-header">
+            <p>LUK GLOBAL</p>
+        </div>
+        <div class="luk-time">
+            <p>Luk Time :</p>
+            <a href="https://docs.google.com/spreadsheets/d/1nCuz-O5YQkTCd33JoAYXWyDhLNcFhadH8ioua035Pi8/edit#gid=902735385" >LINK</a>
+        </div>
+        <div class="luk-classroom">
+            <p>Classroom google :</p>
+            <a href="https://classroom.google.com/c/NTU5ODA1MDYwNzQ0">LINK</a>
+        </div>
+        <div class="luk-folder">
+            <p>folder project :</p>
+            <a href="https://drive.google.com/drive/folders/1wBEzNCV7qI20CFJf8Dvg2Ete17YaPrF2">LINK</a>
+        </div>
+        </div>
+        <div class="copyby">© Copyright by Anh Tai</div>
+    </div>
+</body>
+</html>
